@@ -1,7 +1,7 @@
 # Custom HTML5 Video Player Exercise
 
 ## Description
-This is a learning exercise using Wes Bos' 11th-day coding challenge called Custom HTML5 Video Player. This exercise is part of a larger 30-day coding challenge called <a href="https://javascript30.com/" target="_blank">30 Day Vanilla JS Coding Challenge</a>.
+This is a learning exercise using Wes Bos' 11th-day coding challenge called Custom HTML5 Video Player. This exercise is part of a larger 30-day coding challenge called [JavaScript30](https://javascript30.com/).
 
 Implemented features shown in the video (except one: progress bar click and move) and also added some of my own. HTML and most of the CSS was already written. I wrote all of the JS and edited some of the CSS using JS. The goal was to build my own version of the video player from scratch.
 
