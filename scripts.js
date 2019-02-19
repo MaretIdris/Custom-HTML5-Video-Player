@@ -54,13 +54,14 @@ scrubbers.forEach(
 // Add event listener to skip buttons (10s back, 25s forwards).
 const skipButtons = document.querySelectorAll('button[data-skip]');
 
-function skipVideo() {
-    if (this.dataset.skip === "-10") {
+const skipVideo = (event) => {
+    const button = event.target;
+    if (button.dataset.skip === "-10") {
         video.currentTime -= 10;
-    } else if (this.dataset.skip === "30") {
+    } else if (button.dataset.skip === "30") {
         video.currentTime += 30;
     }
-}
+};
 
 skipButtons.forEach(button => button.addEventListener('click', skipVideo));
 
@@ -71,7 +72,7 @@ const fullScreen = document.querySelector('.fullscreen');
 const player = document.querySelector('.player');
 
 // Clicking on fullscreen button, add :fullscreen to the class player.
-function videoFullscreen() {
+const videoFullscreen = () => {
     if (player.requestFullscreen) {
         player.requestFullscreen();
     } else if (player.mozRequestFullScreen) { /* Firefox */
@@ -96,7 +97,7 @@ function videoFullscreen() {
 
         fullScreen.textContent = "fullscreen";
     }
-}
+};
 
 fullScreen.addEventListener('click', videoFullscreen);
 
