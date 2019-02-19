@@ -14,15 +14,15 @@ This was done purely for learning purposes to understand what variables belong t
 ## Video player
 Image of an original video player:
 
-![Original video](original_video.png)
+<img src="original_video.png" width="600">
 
 Finished project:
 
-![Finished video](HTML5_video_player.gif)
+<img src="HTML5_video_player.gif" width="600">
 
 
 ## Features
-Built all of the original features and added some of my own.
+Built all of the original features and then added some.
 
 ### Original video features:
 - Press play, the video starts playing and an icon of the button changes from play to pause. Same 
