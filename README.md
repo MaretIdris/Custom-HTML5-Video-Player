@@ -14,11 +14,11 @@ This was done purely for learning purposes to understand what variables belong t
 ## Video player
 Image of an original video player:
 
-<img src="original_video.png" width="600">
+<img src="media/original_video.png" width="600">
 
 Finished project:
 
-<img src="HTML5_video_player.gif" width="600">
+<img src="media/HTML5_video_player.gif" width="600">
 
 
 ## Features
