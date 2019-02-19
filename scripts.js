@@ -37,14 +37,17 @@ window.addEventListener('keyup', playVideoOnKeyUp);
 const scrubbers = document.querySelectorAll('[type="range"]');
 
 // Must use regular function. Code breaks using arrow function.
-function volumeAndSpeed() {
-    // Assign this.value to the VIDEO tag this.name.
-    video[this.name] = this.value;
-}
+const volumeAndSpeed = (event) => {
+    // Assign this.value to the VIDEO object this.name.
+    const scrubber = event.target;
+    video[scrubber.name] = scrubber.value;
+};
 
 // Scrubbers need change/click + mousemove event.
-scrubbers.forEach(scrubber => scrubber.addEventListener('click', volumeAndSpeed));
-scrubbers.forEach(scrubber => scrubber.addEventListener('mousemove', volumeAndSpeed));
+scrubbers.forEach(
+    scrubber => scrubber.addEventListener('click', volumeAndSpeed));
+scrubbers.forEach(
+    scrubber => scrubber.addEventListener('mousemove', volumeAndSpeed));
 
 // ------------------------------------------
 
@@ -110,7 +113,7 @@ const trackingProgress = () => {
 
 const skipVideoOnProgressBar = () => {
     const num = event.clientX - player.offsetLeft - 5;
-    const duration =  video.duration;
+    const duration = video.duration;
 
     progressBar.style.flexBasis = (num * 100 / (player.offsetWidth - 10)) + "%";
     video.currentTime = duration * num / (player.offsetWidth - 10);
