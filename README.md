@@ -3,7 +3,7 @@
 ## Description
 This is a learning exercise using Wes Bos' 11th-day coding challenge called Custom HTML5 Video Player. This exercise is part of a larger 30-day coding challenge called [JavaScript30](https://javascript30.com/).
 
-Implemented features shown in the video (except one: progress bar click and move) and also added some of my own. HTML and most of the CSS was already written. I wrote all of the JS and edited some of the CSS using JS. The goal was to build my own version of the video player from scratch.
+Implemented features shown in the video (except one: progress bar click and move) and also added some of my own. HTML and most of the CSS was already written. I wrote all of the JS and edited some of the CSS using JS. The goal was to build my own JS for the video player from scratch.
 
 I don't use classes and I use the comment below to separate  groups of code in JS file:
 ``` 
